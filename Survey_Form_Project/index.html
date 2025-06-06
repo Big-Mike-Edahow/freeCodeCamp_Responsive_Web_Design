@@ -1,0 +1,88 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1 id="title" class="center">freeCodeCamp Survey Form</h1>
+            <p id="description" class="center">Please fill out this survey form.</p>
+            <br>
+        </section>
+        <section class="container">
+            <form id="survey-form">
+                <p>
+                    <label id="name-label" for="name">Name: </label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                </p><br>
+                <p>
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+                </p><br>
+                <p>
+                    <label id="number-label" for="number">Age: </label>
+                    <input id="number" type="number" name="number" min="12" max="100" placeholder="Enter your age">
+                </p><br>
+                <fieldset>
+                    <legend>What is your favorite programming language?</legend>
+                    <select id="dropdown" name="language" required>
+                        <option disabled selected value>Select language</option>
+                        <option value="python">Python</option>
+                        <option value="go">Go</option>
+                        <option value="sql">SQL</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Is the freeCodeCamp platform easy to use?</legend>
+                    <p>
+                        <label for="platform-ease">Definitely</label>
+                        <input type="radio" name="platform-ease" value="definitely" checked>
+                    </p>
+                    <p>
+                        <label for="platform-ease">Maybe</label>
+                        <input type="radio" name="platform-ease" value="maybe">
+                    </p>
+                    <p>
+                        <label>Not sure</label>
+                        <input type="radio" name="platform-ease" value="not-sure">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What courses would you like to see?</legend>
+                    <p><i>Check all that apply.</i></p>
+                    <br>
+                    <label><input type="checkbox" name="course" value="bootstrap">Bootstrap</label>
+                    <label><input type="checkbox" name="course" value="tailwind">Tailwind CSS</label>
+                    <label><input type="checkbox" name="course" value="react">React</label>
+                </fieldset>
+                <br>
+                <p>
+                    <label for="comment">Additional comments?</label>
+                    <textarea name="comment" placeholder="Your comment goes here."></textarea>
+                </p>
+                <br>
+                <p>
+                    <button id="submit" type="submit">Submit</button>
+                <p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>Copyright &copy; 2025 Mike Jackson &reg;</small>
+    </footer>
+</body>
+
+</html>
+
