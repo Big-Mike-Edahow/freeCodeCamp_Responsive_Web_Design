@@ -1,0 +1,165 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <title>Read the Docs</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>The Go Programming Language</header><br>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Useful_knowledge">Useful knowledge</a>
+            </li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+
+            <li>
+                <a class="nav-link" href="#Variable_declaration">Variable Declaration</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Function_declarations">Function declarations</a>
+            </li>
+            <li><a class="nav-link" href="#Further_reading">Further reading</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header class="center">Introduction</header><br>
+            <article>
+                <p>
+                    The Go programming language was developed at Google by in 2007 by
+                    Robert Griesemer, Rob Pike, and Ken Thompson. It was announced to
+                    the public in November of 2009. Version 1.0 was released in March
+                    of 2012.
+                </p>
+                <p>
+                    Go is a statically typed and compiled high level language that aims
+                    for simplicity. To quote Rob Pike: "Go's purpose is therefore not to
+                    do research into programming language design; it is to improve the
+                    working environment for its designers and their coworkers."
+                </p>
+                <ul>
+                    <li>
+                        One of Go's key aspects is it's speed as a compiled language. It's
+                        standard library is optimized for performance and low resource usage.
+                    </li>
+                    <li>
+                        Go's standard library contains the neccessary tools out of the box
+                        to build http servers and communicate with database management systems.
+                        Go has support for concurrency with goroutines and channels, garbage
+                        collection and cloud development.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Useful_knowledge">
+            <header class="center">Useful knowledge</header><br>
+            <article>
+                <p>Before reading, you should have the following:</p>
+                <ul>
+                    <li>
+                        A working knowledge of high level programming languages. Concepts
+                        such as variables, data types, and functions should be familiar to
+                        you.
+                    </li>
+                    <li>
+                        Experience using a text-editor in an IDE (integrated development
+                        environment). Visual Studio Code is a favorite choice for many
+                        professional programmers. Code snippets will be given throughout.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header class="center">Hello world</header><br>
+            <article>
+                <p>The traditional first program written when learning a new programming
+                    language is the quintessential "hello world", the origins of which can
+                    be traced back to the early 1970's. Brian Kernighan (the author of "The
+                    C Programming Language"), wrote the first version as part of a tutorial
+                    for the B programming language while working at Bell Labs.</p>
+                <code>
+                    package main
+                    import "fmt"
+
+                    func main() {
+	                    fmt.Println("Hello world!")
+                    }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variable_declaration">
+            <header class="center">Variable declaration</header><br>
+            <article>
+                <p>Go allows you to declare a variable the following ways:</p>
+                <p>
+                    Using the var keyword. An example: <code>var name string</code>
+                    This declares a variable named <i>name</i>, of type <b>string</b>.
+                </p>
+                <p>
+                    A variable can be declared and initialized by assigning a value
+                    to it. Code example: <code>var num int = 25</code> This declares a
+                    variable named <i>num</i>, of type <b>integer</b>, and initializes
+                    it to the value of 25.
+                </p>
+                <p>
+                    With the special := operator. The compiler will infer the variable's
+                    data type by the value assigned to it. Example: <code>x := 13</code>
+                    This declares a variable named <i>x</i> with an initial value of 13.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Function_declarations">
+            <header class="center">Function declarations</header><br>
+            <article>
+                <p>User defined functions in Go are declared using the <i>func</i> keyword,
+                    the function name, parentheses, and curly brackets. This is also called
+                    the function signature. An example function follows:
+                    <code>
+                    func squareRoot(num int) {
+                        num = num * num
+                        return num
+                    }
+                </code>
+                </p>
+                <ul>
+                    <li>The name of the function <i>cannot</i> be a Go keyword.</li>
+                    <li>
+                        Function names should be short and concise. They should clearly
+                        reflect the role that the function plays in the program.
+                    </li>
+                    <li>
+                        Functions can be called in a program by using the function name
+                        followed by parentheses. After the function is executed, program
+                        flow will return to the point directly after the function call.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Further_reading">
+            <header class="center">Further reading</header><br>
+            <article>
+                <p>For further reading, the folllowing books are recommended:</p>
+                <ul>
+                    <li>
+                        <a href="https://ineasysteps.com/products-page/go-programming-in-easy-steps/">Go Programming in
+                            easy steps</a>.
+                    </li>
+                    <li>
+                        <a href="https://www.gopl.io/">The Go Programming Language</a>.
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
+
