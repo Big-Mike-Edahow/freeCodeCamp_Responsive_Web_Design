@@ -1,3 +1,3 @@
-# freeCodeCamp Responsive Web Design Certificate Program
+<h1 style="text-align: center;">freeCodeCamp Responsive Web Design</h1>h1>
 
-<img src="./freeCodeCamp_RWD_Certificate.png" alt="RWD Certificate" width="800px">
+<img src="./freeCodeCamp_RWD_Certificate.png" alt="RWD Certificate" width="700px">
