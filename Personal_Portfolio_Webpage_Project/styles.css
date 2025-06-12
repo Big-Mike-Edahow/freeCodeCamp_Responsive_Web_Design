@@ -1,0 +1,288 @@
+/* styles.css */
+
+:root {
+    --nav-bg: dodgerblue;
+    --projects-bg: lightseagreen;
+    --contact-bg: lightpink;
+    --footer-bg: forestgreen;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    font-size: 14pt;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: var(--nav-bg);
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+
+nav h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Sofia", sans-serif;
+    background-image: url("https://Big-Mike-Edahow.github.io/images/favicons/HTML/red/logo.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 50px;
+    color: black;
+}
+
+nav a {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+hr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 5px;
+    color: black;
+    background-color: black;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, lightskyblue, darkviolet);
+}
+
+#welcome-section>h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Sofia", sans-serif;
+}
+
+#welcome-section>h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+#welcome-section>p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: oblique;
+    color: white;
+}
+
+#projects {
+    padding: 2rem;
+    background: var(--projects-bg);
+}
+
+.project-header {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-header>h2 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: .5rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-image {
+    width: 480px;
+    height: 310px;
+    background: none;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    background: var(--contact-bg);
+}
+
+.contact-header>h2 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: .5rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-details>a {
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--footer-bg);
+    border-top: 2px solid black;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 3px;
+    padding: 3px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+footer small {
+    font-size: .75rem;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    nav {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    #welcome-section>h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-section>h2 {
+        font-size: 1.5rem;
+    }
+
+    #welcome-section>p {
+        font-size: 1rem;
+    }
+
+    .project-header>h2 {
+        font-size: 1.3rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+
+    .contact-header>h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-links {
+        grid-template-columns: 100%;
+        width: auto;
+    }
+
+    .contact-details {
+        margin: 10px 0;
+    }
+
+    .contact-details>a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}

@@ -47,8 +47,8 @@ main {
 }
 
 form {
-    background-color: rgb(186, 207, 227);
     padding: 20px;
+    background-color: rgb(186, 207, 227);
     border: none;
     border-radius: .5em;
 }
@@ -103,9 +103,9 @@ input[type=number] {
 form input[type=radio],
 input[type=checkbox] {
     display: inline-block;
-    margin: .5em;
     min-height: 1em;
     min-width: 1em;
+    margin: .5em;
 }
 
 form textarea {
@@ -140,8 +140,8 @@ footer {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    height: 3em;
     width: 35%;
+    height: 3em;
     margin: 10px auto;
     padding: 10px;
     background-color: ghostwhite;

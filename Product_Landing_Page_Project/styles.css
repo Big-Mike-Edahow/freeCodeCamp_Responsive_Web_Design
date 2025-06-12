@@ -1,4 +1,4 @@
-/* style.css */
+/* styles.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
 
@@ -49,10 +49,6 @@ header {
     border-radius: 3px;
 }
 
-nav {
-    font-weight: 400;
-}
-
 nav>ul {
     display: flex;
     flex-direction: row;
@@ -83,7 +79,7 @@ nav>ul>li>a:hover {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     width: 100%;
     margin: 30px auto 0 auto;
     padding: 30px 10px 0 10px;
@@ -163,9 +159,9 @@ article > p {
 }
 
 #demo {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 #demo>iframe {
@@ -176,10 +172,10 @@ article > p {
 }
 
 #widgets {
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .widget {
@@ -280,20 +276,20 @@ footer>nav>a:hover {
     }
 
     nav {
-        margin-top: 10px;
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
+        margin-top: 10px;
         padding: 0 50px;
     }
 
     nav>ul {
-        width: 35vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width: 35vw;
     }
 
     nav li {
@@ -301,9 +297,9 @@ footer>nav>a:hover {
     }
 
     .logo {
-        margin-top: 15px;
-        width: 100%;
         position: relative;
+        width: 100%;
+        margin-top: 15px;
     }
 
     .logo>img {
